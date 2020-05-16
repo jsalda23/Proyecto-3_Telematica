@@ -5,8 +5,11 @@
 ### Trabajo individual
 # Realizar análisis exploratorio de datos sobre datasets de COVID-19:
 ## 1. Fuentes de datos
-### a nivel mundial, descargar todos los datasets de:
-#### https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases
+
+### Se realizó la descarga de los siguientes datasets:
+
+##### A nivel mundial:
+###### https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases
 
 a nivel colombia, descargar todos los datasets de:
 https://data.humdata.org/dataset/positive-cases-of-covid-19-in-colombia
