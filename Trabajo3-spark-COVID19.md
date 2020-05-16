@@ -20,3 +20,6 @@
 
 ## 2. Ingesta y almacenamiento de datos
   ### Construcción del datalake en AWS con S3
+  ![](Imagenes/datasets.PNG)
+  ![](Imagenes/S3-mundial.PNG)
+  ![](Imagenes/S3-colombia.PNG)
