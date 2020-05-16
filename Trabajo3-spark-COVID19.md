@@ -9,14 +9,14 @@
  ### Se realizó la descarga de los siguientes datasets:
   #### A nivel mundial:
    ##### https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases
-    ![](Imagenes/Descargas%20mundiales.PNG)
+   ![](Imagenes/Descargas%20mundiales.PNG)
 
   #### A nivel colombia:
    ##### https://data.humdata.org/dataset/positive-cases-of-covid-19-in-colombia
-    ![](Imagenes/Descargas-Colombia.PNG)
+   ![](Imagenes/Descargas-Colombia.PNG)
 
    ##### https://www.ins.gov.co/Paginas/Inicio.aspx
-    ![](Imagenes/Descargas-Colombia2.PNG)
+   ![](Imagenes/Descargas-Colombia2.PNG)
 
 ## 2. Ingesta y almacenamiento de datos
   ### Construcción del datalake en AWS con S3
