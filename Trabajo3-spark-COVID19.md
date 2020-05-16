@@ -8,11 +8,9 @@
 
 ### Se realizó la descarga de los siguientes datasets:
 
-##### A nivel mundial:
-###### https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases
+#### A nivel mundial:
+##### https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases
 
-a nivel colombia, descargar todos los datasets de:
-https://data.humdata.org/dataset/positive-cases-of-covid-19-in-colombia
-
-buscar otros datasets sobre covid-19 de colombia en:
-https://data.humdata.org/ https://www.ins.gov.co/Paginas/Inicio.aspx https://www.who.int/data/gho
+#### A nivel colombia:
+##### https://data.humdata.org/dataset/positive-cases-of-covid-19-in-colombia
+##### https://data.humdata.org/ https://www.ins.gov.co/Paginas/Inicio.aspx https://www.who.int/data/gho
