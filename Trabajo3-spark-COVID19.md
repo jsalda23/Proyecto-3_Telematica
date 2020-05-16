@@ -14,4 +14,7 @@
 
 #### A nivel colombia:
 ##### https://data.humdata.org/dataset/positive-cases-of-covid-19-in-colombia
+![](Imagenes/Descargas-Colombia.PNG)
+
 ##### https://data.humdata.org/ https://www.ins.gov.co/Paginas/Inicio.aspx https://www.who.int/data/gho
+![](Imagenes/Descargas-Colombia2.PNG)
