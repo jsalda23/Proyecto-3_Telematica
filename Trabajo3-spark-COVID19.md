@@ -10,7 +10,7 @@
 
 #### A nivel mundial:
 ##### https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases
-![Evidencia1](/Descargas mundiales.PNG)
+![](Descargas mundiales.PNG)
 
 #### A nivel colombia:
 ##### https://data.humdata.org/dataset/positive-cases-of-covid-19-in-colombia
