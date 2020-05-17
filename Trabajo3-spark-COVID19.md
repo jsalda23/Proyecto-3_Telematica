@@ -26,6 +26,10 @@
 
 ## 3. Procesamiento: Análisis exploratorio de datos con pyspark
 
+ ### Creación EMR en AWS
+  #### Creamos un EMR en AWS en el cual usaremos el notebook Zeppelin para la exploración de los datos
+ ![](Imagenes/EMR.PNG)
+
  ### Casos recuperados a nivel Mundial
   #### En la siguiente imagen se puede evidenciar la primera parte del análisis exploratorio de los casos recuperados a nivel Mundial. El analisis completo se encuentra adjunto en la carpeta "RecuperadosMundialmente"
   ![](Imagenes/Primera_Imagen_AnalysisRecuperados_Mundial.PNG)
@@ -48,10 +52,27 @@
  
 
 ## 4. Visualización básica de datos (Usando R)
+ ### Para la manipulación y visualicación de los datos usamos R. Para realizar esta visualización fue necesario tener fechas como factores y organizar los datos por paises, arupando por pais y fecha, y relizando las sumas de lo datos.Posteriormente fue necesario verificar la estructura interna de las nuevas tablas y de los datos de colombia.
+ ### Cabe aclarar, que para la facilidad de la visualización, de la situación Mundial, se seleccionaron algunos paises de interes, y el total mundial de los registros. El Script con mayor detalle de como se realizó este analisis y posterior visualización se encuentra en la carpeta "Visualización-R".
 
-### 4.1. Situación en el mundo
-### 4.2. Situación en Colombia
-### 4.3. Colombia vs el mundo
+
+ ### 4.1. Situación en el mundo 
+  #### Casos confirmados
+  ![](Positivos_mundo.PNG)
+  
+  #### Casos Recuperados
+  ![](recuperados_mundo.PNG)
+  
+  #### Total de muertes
+  ![](Muertes_mundo.PNG)
+  
+ ### 4.2. Situación en Colombia
+  #### Los registros en Colombia inician el 26 de febrero de 2020, el día del primer caso positivo en el país. 
+  
+ ### 4.3. Colombia vs el mundo
+  #### Aunque los registros a nivel mundial inician antes de los registros en Colombia, para poder realizar la comparación es necesario que ambos estén en la misma linea de tiempo. Sin embargo, al Colombia tener, considerablemente pocos casos no es muy visible su comparación con los registros a nivel mundial.
+  ![](Colombiavsmundo.PNG)
+  ![](Colombiavsmundo2.PNG)
  
  
 
