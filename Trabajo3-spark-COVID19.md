@@ -19,9 +19,13 @@
    ![](Imagenes/Descargas-Colombia2.PNG)
 
 ## 2. Ingesta y almacenamiento de datos
-  ### Construcción del datalake en AWS con S3
+  ### Construcción del datalake en AWS con S3 y carga de datos
   ![](Imagenes/datasets.PNG)
   ![](Imagenes/S3-mundial.PNG)
   ![](Imagenes/S3-colombia.PNG)
 
 ## 3. Procesamiento: Análisis exploratorio de datos con pyspark
+
+### Casos recuperados a nivel Mundial
+#### En la siguiente imagen se puede evidenciar la primera parte del análisis exploratorio de los casos recuperados a nivel Mundial. El analisis completo se encuentra adjunto en la carpeta "RecuperadosMundialmente"
+![](Imagener/Primera_Imagen_AnalysisRecuperados_Mundial.PNG)
