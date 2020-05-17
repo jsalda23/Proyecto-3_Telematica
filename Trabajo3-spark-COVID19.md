@@ -27,9 +27,28 @@
 ## 3. Procesamiento: Análisis exploratorio de datos con pyspark
 
  ### Casos recuperados a nivel Mundial
-  #### En la siguiente imagen se puede evidenciar la primera parte del análisis exploratorio de los casos recuperados a nivel Mundial.  El analisis completo se encuentra adjunto en la carpeta "RecuperadosMundialmente"
+  #### En la siguiente imagen se puede evidenciar la primera parte del análisis exploratorio de los casos recuperados a nivel Mundial. El analisis completo se encuentra adjunto en la carpeta "RecuperadosMundialmente"
   ![](Imagenes/Primera_Imagen_AnalysisRecuperados_Mundial.PNG)
 
- ### Casos recuperados a nivel Mundial
-  #### En la siguiente imagen se puede evidenciar la primera parte del análisis exploratorio de los casos recuperados a nivel Mundial.   El analisis completo se encuentra adjunto en la carpeta "RecuperadosMundialmente"
- ![](Imagenes/Primera_Imagen_AnalysisRecuperados_Mundial.PNG)
+ ### Muertes a nivel Mundial
+  #### En la siguiente imagen se puede evidenciar la primera parte del análisis exploratorio de las muertes a nivel Mundial. El analisis completo se encuentra adjunto en la carpeta "MuertesMundialmente"
+ ![](Imagenes/Primera_Imagen_AnalysisMuertes_Mundial.PNG)
+ 
+ ### Casos confirmados a nivel Mundial
+  #### En la siguiente imagen se puede evidenciar la primera parte del análisis exploratorio de los casos confirmados a nivel Mundial. El analisis completo se encuentra adjunto en la carpeta "CasosMundialmente"
+ ![](Imagenes/Primera_Imagen_AnalisisCasos_Mundial.PNG)
+ 
+### Casos confirmados en Colombia de acuerdo a 'INS.gov.co'
+  #### En la siguiente imagen se puede evidenciar la primera parte del análisis exploratorio de los casos confirmados en colombia de acuerdo a 'INS.gov.co'. El analisis completo se encuentra adjunto en la carpeta "CasosPositivosColombia_INS"
+ ![](Imagenes/Primera_Imagen_AnalisisCasos_Colombia_INS.PNG)
+
+### Casos confirmados en Colombia de acuerdo a 'data.humdata.org'
+  #### En la siguiente imagen se puede evidenciar la primera parte del análisis exploratorio de los casos confirmados en Colombia de acuerdo a 'data.humdata.org'. El analisis completo se encuentra adjunto en la carpeta "CasosPositivosColombia_humdata"
+ ![](Imagenes/Primera_Imagen_AnalisisCasos_Colombia_humdata.PNG)
+ 
+
+## 4. Visualización
+ 
+ 
+
+
