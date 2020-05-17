@@ -1,2 +1,23 @@
+#Numero de recuperados a nivel mundial
+
+##Se crea la sesión
 %pyspark
-# Numero de recuperados a nivel mundial
+spark = SparkSession.builder.appName('Basics').getOrCreate()
+
+#" Conteo del total de columnas
+SensorDataRDD = sc.textFile('s3://aws-logs-061895363576-us-east-1/mundial/time_series_covid19_recovered_global.csv')
+SensorDataCount = SensorDataRDD.count()
+SensorDataCount
+
+# definir 'df' con la tabla almacenada en AWS S3
+df = spark.read.csv('s3://aws-logs-061895363576-us-east-1/mundial/time_series_covid19_recovered_global.csv', header=True)
+
+# Ver el nombre de las columnas
+df.columns
+
+# Ver el tipo de columnas
+df.printSchema()
+
+df.head(5)
+
+df.describe().show()
