@@ -1,0 +1,32 @@
+# Numero de casos confirmados en Colombia, de acuerdo a 'ins.gov.co'
+
+# Se crea la sesión
+%pyspark
+spark = SparkSession.builder.appName('Basics').getOrCreate()
+
+# Conteo del total de filas
+SensorDataRDD = sc.textFile('s3://aws-logs-061895363576-us-east-1/colombia/Casos_positivos_de_COVID-19_en_Colombia.csv')
+SensorDataCount = SensorDataRDD.count()
+SensorDataCount
+
+# definir 'df' con la tabla almacenada en AWS S3
+df = spark.read.csv('s3://aws-logs-061895363576-us-east-1/colombia/Casos_positivos_de_COVID-19_en_Colombia.csv', header=True)
+
+# Ver el nombre de las columnas
+df.columns
+
+# Ver el tipo de cada columna
+df.printSchema()
+
+# Visualizar las primeras 5 columnas
+df.head(5)
+
+# Visualizar la totalidad de los datos
+df.describe().show()
+
+# Ordenar la tabla en orden descendiente, de acuerdo a la edad de los casos confirmados
+df.orderBy(df['Edad'].desc()).show()
+
+# Media de edad de los casos confirmados
+from pyspark.sql.functions import mean
+df.select(mean("Edad")).show()
