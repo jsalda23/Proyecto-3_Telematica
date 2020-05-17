@@ -68,6 +68,7 @@
   
  ### 4.2. Situación en Colombia
   #### Los registros en Colombia inician el 26 de febrero de 2020, el día del primer caso positivo en el país. 
+  ![](Imagenes/Colombia.png)
   
  ### 4.3. Colombia vs el mundo
   #### Aunque los registros a nivel mundial inician antes de los registros en Colombia, para poder realizar la comparación es necesario que ambos estén en la misma linea de tiempo. Sin embargo, al Colombia tener, considerablemente pocos casos no es muy visible su comparación con los registros a nivel mundial.
