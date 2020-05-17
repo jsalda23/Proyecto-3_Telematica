@@ -1,0 +1,32 @@
+# Numero de muertos a nivel mundial
+
+# Se crea la sesión
+%pyspark
+spark = SparkSession.builder.appName('Basics').getOrCreate()
+
+# Conteo del total de filas
+SensorDataRDD = sc.textFile('s3://aws-logs-061895363576-us-east-1/mundial/time_series_covid19_deaths_global.csv')
+SensorDataCount = SensorDataRDD.count()
+SensorDataCount
+
+# definir 'df' con la tabla almacenada en AWS S3
+df = spark.read.csv('s3://aws-logs-061895363576-us-east-1/mundial/time_series_covid19_deaths_global.csv', header=True)
+
+# Ver el nombre de las columnas
+df.columns
+
+# Ver el tipo de cada columna
+df.printSchema()
+
+# Visualizar las primeras 5 columnas
+df.head(5)
+
+# Visualizar la totalidad de los datos
+df.describe().show()
+
+# Ordenar la tabla en orden descendiente, de acuerdo al numero de muertes el 15 de mayo de 2020
+df.orderBy(df['5/15/20'].desc()).show()
+
+# Media de muertes el 15 de mayo de 2020
+from pyspark.sql.functions import mean
+df.select(mean("5/15/20")).show()
