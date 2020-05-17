@@ -47,7 +47,11 @@
  ![](Imagenes/Primera_Imagen_AnalisisCasos_Colombia_humdata.PNG)
  
 
-## 4. Visualización
+## 4. Visualización básica de datos (Kibana)
+
+### 4.1. Situación en el mundo
+### 4.2. Situación en Colombia
+### 4.3. Colombia vs el mundo
  
  
 
