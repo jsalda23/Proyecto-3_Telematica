@@ -1,2 +1,2 @@
 %pyspark
-# #Numero de recuperados a nivel mundial
+# Numero de recuperados a nivel mundial
