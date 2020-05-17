@@ -26,6 +26,10 @@
 
 ## 3. Procesamiento: Análisis exploratorio de datos con pyspark
 
-### Casos recuperados a nivel Mundial
-#### En la siguiente imagen se puede evidenciar la primera parte del análisis exploratorio de los casos recuperados a nivel Mundial. El analisis completo se encuentra adjunto en la carpeta "RecuperadosMundialmente"
-![](Imagenes/Primera_Imagen_AnalysisRecuperados_Mundial.PNG)
+ ### Casos recuperados a nivel Mundial
+  #### En la siguiente imagen se puede evidenciar la primera parte del análisis exploratorio de los casos recuperados a nivel Mundial.  El analisis completo se encuentra adjunto en la carpeta "RecuperadosMundialmente"
+  ![](Imagenes/Primera_Imagen_AnalysisRecuperados_Mundial.PNG)
+
+ ### Casos recuperados a nivel Mundial
+  #### En la siguiente imagen se puede evidenciar la primera parte del análisis exploratorio de los casos recuperados a nivel Mundial.   El analisis completo se encuentra adjunto en la carpeta "RecuperadosMundialmente"
+ ![](Imagenes/Primera_Imagen_AnalysisRecuperados_Mundial.PNG)
