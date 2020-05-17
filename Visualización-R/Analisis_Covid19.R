@@ -3,6 +3,7 @@
 #Topicos especiales en telematica.
 #A continuacion se manipulan los datos de covid19 para su posterior graficacion.
 #Version R -> 3.6.0
+
 #Primero se cargan las librerias a emplear.
 library(ggplot2)
 library(dplyr)
@@ -12,15 +13,13 @@ library(gridExtra)
 
 ###########Preparacion de datos ############
 #Cargamos los archivos de interes.
-
 w_pos = read.csv("C:/Users/JuanDiego/Desktop/Topicos_Telematica/Proyecto3/mundialtime_series_covid19_confirmed_global.csv")
 w_death = read.csv("C:/Users/JuanDiego/Desktop/Topicos_Telematica/Proyecto3/time_series_covid19_deaths_global.csv")
 w_rec = read.csv("C:/Users/JuanDiego/Desktop/Topicos_Telematica/Proyecto3/time_series_covid19_recovered_global.csv")
 colombia = read.csv("C:/Users/JuanDiego/Desktop/Topicos_Telematica/Proyecto3/Casos_positivos_de_COVID-19_en_Colombia.csv")
 
-#Dado que R entiende registros como filas y variables como columnas y que no es posible 
-#realizar analisis con las fechas como variables, deben manipularse las tablas para obtener los registros necesarios
-
+#Dado que R entiende registros como filas y variables como columnas y que no es posible realizar 
+#analisis con las fechas como variables, deben manipularse las tablas para obtener los registros necesarios
 w_pos2 = w_pos %>% gather(Date, Ammount, -Province.State, -Country.Region, -Lat, -Long)
 w_death2 = w_death %>% gather(Date, Ammount, -Province.State, -Country.Region, -Lat, -Long)
 w_rec2 = w_rec %>% gather(Date, Ammount, -Province.State, -Country.Region, -Lat, -Long)
@@ -31,15 +30,14 @@ str(w_pos2)
 str(w_death2)
 str(w_rec2)
 str(colombia)
-#Para graficar, vamos a necesitar las fechas como factores.
 
+#Para graficar, vamos a necesitar las fechas como factores.
 w_pos2$Date=as.factor(w_pos2$Date)
 w_death2$Date=as.factor(w_death2$Date)
 w_rec2$Date = as.factor(w_rec2$Date)
 
 #Como hay varias provincias por pais, se deben organizar los datos por paises, arupando por pais y fecha
 #y relizando las sumas.
-
 w_pos2.2=w_pos2 %>%
   group_by(Country.Region, Date)%>%
   summarise(Ammount=sum(Ammount))%>%
@@ -76,7 +74,6 @@ slx_rec=subset(w_rec2.2, w_rec2.2$Country.Region=="US" | w_rec2.2$Country.Region
                    w_rec2.2$Country.Region=="Italy")
 
 #Vamos a realizar la suma de casos por fecha, para encontrar el total mundial.
-
 tot_pos= w_pos2 %>%
   group_by(Date) %>%
   summarise(Ammount=sum(Ammount))%>%
@@ -101,7 +98,6 @@ tot_rec$location="world"#Agregamos una columna indicando que se trata del mundo
 
 #Juntamos todos los datos, obtenemos una sola tabla para muertes y otra para positivos.
 #Las tablas incluiran los paises de interes y el total calculado.
-
 graph_pos=data.frame(Date=slx_pos$Date, Ammount=slx_pos$Ammount, location=slx_pos$Country.Region)
 graph_pos=rbind(graph_pos, tot_pos)#Se juntan las tablas de positivos
 
@@ -117,7 +113,6 @@ graph_rec=rbind(graph_rec, tot_rec)#Se juntan las tablas de muertes
 #agregar una escala de días y no fechas a ambas bases de datos (dia1 - dian)
 #Dado que la base de datos de colombia está hecha por registro, si se quieresaber cuantos registros
 #hay por fecha, solo basta con extraer la fecha y realizar una tabla de contingencia.
-
 col=colombia$Fecha.de.notificaciÃ³n
 col2=table(col)
 col2=as.data.frame(col2)
@@ -134,7 +129,6 @@ pos_col_world=rbind(col2,tot_pos)
 pos_col_world$Dia=as.factor(pos_col_world$Dia)#Volvemos los días factores, para poder graficar
 
 ###########Graficas################
-
 #Para que el eje x sea visible, se deben quitar algunas fechas.
 #Primero, se hallan los niveles de las fechas, para establecer inicio y final.
 levels(graph_pos$Date)
@@ -174,7 +168,6 @@ ggsave("C:/Users/JuanDiego/Desktop/Topicos_Telematica/Proyecto3/graficas/recuper
 
 
 #Colombia vs el mundo
-
 
 Colombiavsmundo=ggplot(pos_col_world, aes(x=Dia, y = Ammount, color = location, group = location))+
   geom_point()+geom_line()+scale_x_discrete(breaks = c("1", "71", "115"), 
