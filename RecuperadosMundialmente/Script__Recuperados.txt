@@ -1,10 +1,10 @@
-#Numero de recuperados a nivel mundial
+# Numero de recuperados a nivel mundial
 
-##Se crea la sesión
+# Se crea la sesión
 %pyspark
 spark = SparkSession.builder.appName('Basics').getOrCreate()
 
-#" Conteo del total de columnas
+# Conteo del total de filas
 SensorDataRDD = sc.textFile('s3://aws-logs-061895363576-us-east-1/mundial/time_series_covid19_recovered_global.csv')
 SensorDataCount = SensorDataRDD.count()
 SensorDataCount
@@ -15,9 +15,15 @@ df = spark.read.csv('s3://aws-logs-061895363576-us-east-1/mundial/time_series_co
 # Ver el nombre de las columnas
 df.columns
 
-# Ver el tipo de columnas
+# Ver el tipo de cada columna
 df.printSchema()
 
+# Visualizar las primeras 5 columnas
 df.head(5)
 
+# Visualizar la totalidad de los datos
 df.describe().show()
+
+# Ver el promedio de recuperados el 15 de mayo de 2020
+from pyspark.sql.functions import mean
+df.select(mean("5/15/20")).show()
