@@ -54,7 +54,7 @@ w_rec2.2=w_rec2 %>%
   mutate(Ammount)
   
 
-#Dada la cantidad de datos, se realizara una nueba tabla con solo algunos paises de interes
+#Dada la cantidad de datos, se realizara una nueva tabla con solo algunos paises de interes
 #Y se agregaran los totales mundiales.
 #Paises seleccionados: Estados Unidos, Brasil, España, Italia y China 
 
